@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculadora</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+	<script src="funcion.js" async="true"></script>
+</head>
+<body>
+	<div id="calculadora">
+
+		
+		<div id="pantalla">
+			<div class ="modo">
+				<button onclick="claro()"><i class=" fas-sun"></i></button>
+				<button onclick="oscuro()"><i class=" fas-moon activo"></i></button>
+				
+			</div>
+			<div id="op"></div>
+			<div id="re"></div>
+		
+
+		</div>
+
+		<div class="botones">
+		<div class="boton sinmargen borarra" onclick="borrar()">c</div>
+		<div class="boton">AC</div>
+		<div class="boton">+/-</div>
+		<div class="boton operador" onclick="agregar('/')">/</div>
+
+		<div class="boton sinmargen" onclick="agregar(7)">7</div>
+		<div class="boton" onclick="agregar(8)">8</div>
+		<div class="boton" onclick="agregar(9)">9</div>
+		<div class="boton operador" onclick="agregar('*')">x</div>
+
+		<div class="boton sinmargen" onclick="agregar(4)">4</div>
+		<div class="boton" onclick="agregar(5)">5</div>
+		<div class="boton" onclick="agregar(6)">6</div>
+		<div class="boton operador" onclick="agregar('-')">-</div>
+
+
+		<div class="boton sinmargen" onclick="agregar(1)">1</div>
+		<div class="boton" onclick="agregar(2)">2</div>
+		<div class="boton" onclick="agregar(3)">3</div>
+		<div class="boton operador" onclick="agregar('+')">+</div>
+
+
+		<div class="boton sinmargen" onclick="agregar(0)">0</div>
+		<div class="boton"></div>
+		<div class="boton" onclick="agregar('.')">.</div>
+		<div class="boton operador" id="igual" onclick="resultado()">=</div>
+		
+	</div>
+
+	</div>
+	
+
+</body>
+</html>
